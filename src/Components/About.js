@@ -6,7 +6,7 @@ import hack from '../assets/hack.png';
 import pitch from '../assets/pitch.png';
 import { get_blogs, get_faqs } from '../apis/blogs_api';
 import Loader from 'react-loader-spinner';
-
+import schedule from "../assets/sched.jpg";
 function About(props) {
 	//
 	const [ faqs, setfaqs ] = useState([]);
@@ -19,7 +19,7 @@ function About(props) {
 			let faq = await get_faqs();
 
 			setfaqs(faq.data?.results);
-			
+
 			if (data.status === 200) {
 				// let rand = Math.floor(Math.random() * data.data.length);
 				// setBlog1(data.data[rand]);
@@ -44,7 +44,7 @@ function About(props) {
 					aos-delay="4000"
 					className="bg-gradient-to-r my-8 text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
 				>
-					<h7 className="font-bold text-5xl mb-2">Mission</h7>
+					<h7 className="font-bold text-5xl mb-2">About Us</h7>
 					<p className="text-justify">
 						Latency aims at providing a platform for technical enthusiastic students to hone their problem
 						solving abilities. The event tries to underline and emphasize on the importance of cultivating
@@ -58,12 +58,9 @@ function About(props) {
 					aos-delay="4000"
 					className="bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
 				>
-					<h7 className="font-bold text-5xl mb-2">Vision</h7>
+					<h7 className="font-bold text-5xl mb-2">Our Sponsor</h7>
 					<p className="text-justify">
-						Latency strives to build an ecosystem that promotes technical growth and development. To set
-						stone for a community that can work together in delivering creative solutions to tacky problems.
-						We aim to be the harbingers of change and work towards instilling a problem solving culture in
-						campus.
+						Micro.company is a venture started by Shyjal Raazi and Aslam Abbas. Both are TKM alumni of 2014. We empower businesses with tools to build strong customer relationships and drives growth. Our zero code SaaS products are tailor made for the SME market. We promote a remote working culture and continues to solve niche market problems with a narrow focus and no outside funding.
 					</p>
 				</div>
 			</div>
@@ -102,6 +99,13 @@ function About(props) {
 						LIVE
 					</a>!!!
 				</h1>
+			</div>
+
+			<div
+				data-aos="fade-up"
+				className="relative backgroundtt flex justify-center items-center  w-full mt-10 rounded-xl flex flex-col items-start"
+			>
+			<img src={schedule} className={"rounded-xl"}/>
 			</div>
 
 			<div

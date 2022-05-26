@@ -20,12 +20,31 @@ function Home(props) {
 		return () => (isSubscribed = false);
 	}, []);
 	return (
-		<div className="backgroundsv">
+		<div className="backgroundsv  bg-opacity-50">
+
+			<div
+				className="absolute right-4 top-4 flex  max-w-sm mx-auto overflow-hidden bg-purpleC rounded-lg shadow-md ">
+				<div className="flex items-center justify-center w-8 bg-black ">
+					<svg className="w-4 h-4 text-white fill-current" viewBox="0 0 40 40"
+						 xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z"/>
+					</svg>
+				</div>
+
+				<div className="px-2 py-1 -mx-3 ">
+					<a href={"https://ieeesbtkmce-assets.s3.amazonaws.com/media/events/guidelines/tech.pdf"} target={"_blank"}>
+					<div className="mx-2">
+						<span className="font-semibold text-blue-600 text-sm px-2">Rules & guidelines</span>
+					</div>
+					</a>
+				</div>
+			</div>
 			{/* <HomeSvg className="z-0 fixed top-0  h-full" /> */}
 			<div
 				data-aos="fade-up"
 				aos-delay="4000"
-				className="z-1 C h-screen absolute top-20 w-screen flex flex-col items-center  "
+				className="z-1 C h-screen absolute top-20 flex flex-col items-center  "
 			>
 				<div className="w-4/5 mb-10 flex flex-col items-center ">
 					{/*<h1 className="text-6xl mb-5 text-white opacity-50">☵ ☵ ☰</h1>*/}
@@ -36,7 +55,17 @@ function Home(props) {
 					</p>
 				</div>
 				<div className="flex mb-10 bg-black bg-opacity-20 shadow-lg rounded-xl w-2/3 px-8 py-4 flex-col items-center">
-					<h2 className="text-2xl lg:text-6xl text-center text-white font-bold">HESTIA</h2>
+					<div className=" bg-gray-200  hover:bg-purpleC rounded-full  m-2">
+						<a target="_blank" href={'https://micro.company/'} rel="noreferrer">
+							<img
+								src={"https://micro.company/assets/images/m.png"}
+								alt="logo"
+								className="w-12 rounded-full"
+							/>
+						</a>
+					</div>
+					<p className="text-center text-white text-sm">{"micro.company Presents"}</p>
+
 					<h3 className="lg:text-9xl md:text-6xl  text-6xl text-transparent bg-clip-text bg-gradient-to-br font-semibold from-blueC via-red-500 to-pinkC p-2">
 						Latency
 					</h3>
@@ -54,7 +83,7 @@ function Home(props) {
 				<div className="mt-10 w-2/3 flex flex-col items-center my-16">
 					<h4 className="text-white">Event Partners</h4>
 					<div className=" mt-1  rounded-lg w-full lg:w-3/4 p-4 flex justify-center items-center bg-transparent">
-						<div className="grid grid-cols-3 lg:grid-cols-3">
+						<div className="grid grid-cols-2 lg:grid-cols-2">
 							{sponsors && sponsors.length ? (
 								sponsors.map((item) => {
 									return (
@@ -64,7 +93,7 @@ function Home(props) {
 													<img
 														src={item.logo}
 														alt="logo"
-														className="w-16 rounded-full"
+														className="w-12 rounded-full"
 													/>
 												</a>
 											</div>
