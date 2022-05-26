@@ -40,7 +40,7 @@ function About(props) {
 		<div className="w-full bg-purpleC    text-white lg:px-20 px-4 py-10">
 			<div className="flex w-full flex-col lg:flex-row items-center justify-around">
 				<div
-					data-aos="fade-right"
+					data-aos="fade-up"
 					aos-delay="4000"
 					className="bg-gradient-to-r my-8 text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
 				>
@@ -54,7 +54,7 @@ function About(props) {
 					</p>
 				</div>
 				<div
-					data-aos="fade-left"
+					data-aos="fade-up"
 					aos-delay="4000"
 					className="bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
 				>
@@ -109,7 +109,7 @@ function About(props) {
 			</div>
 
 			<div
-				data-aos="fade-left"
+				data-aos="fade-up"
 				className="bg-purpleC4 py-5 w-full mt-10 rounded-xl flex p-8 flex-col items-start"
 			>
 				<h7 className="font-bold text-5xl mb-5 ">Have Questions?</h7>
@@ -117,7 +117,7 @@ function About(props) {
 					{faqs && faqs.length ? (
 						faqs.map((item, key) => {
 							return (
-								<div key={key} className="flex flex-col px-5 my-4">
+								<div key={key} className="flex flex-col lg:px-5 my-4">
 									<h7 className="font-semibold text-2xl  mb-2"># {item.ques}</h7>
 									<p className="">{item.ans}</p>
 								</div>

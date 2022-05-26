@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f058624-45f4-4334-8f7b-68819b9601c8" name="Default Changelist" comment="firebase deploy">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,8 @@
       <workItem from="1652796486142" duration="5665000" />
       <workItem from="1652982703280" duration="1020000" />
       <workItem from="1653230064105" duration="1334000" />
-      <workItem from="1653500498841" duration="105000" />
+      <workItem from="1653500498841" duration="1708000" />
+      <workItem from="1653560260778" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="firebase deploy">
       <created>1637242031230</created>
