@@ -84,14 +84,10 @@ function About(props) {
           aos-delay="4000"
           className="bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
         >
-          <h7 className="font-bold text-5xl mb-2">Our Sponsor</h7>
+          <h7 className="font-bold text-5xl mb-2">Our Vision</h7>
           <p className="text-justify">
-            Micro.company is a venture started by Shyjal Raazi and Aslam Abbas.
-            Both are TKM alumni of 2014. We empower businesses with tools to
-            build strong customer relationships and drives growth. Our zero code
-            SaaS products are tailor made for the SME market. We promote a
-            remote working culture and continues to solve niche market problems
-            with a narrow focus and no outside funding.
+            The goal of Latency is to give technically-inclined students a place to practise and perfect their problem-solving skills.
+            This event is an effort to highlight and underscore the significance of developing abilities that will enable students to generate original answers to real-world challenges.
           </p>
         </div>
       </div>
@@ -121,7 +117,7 @@ function About(props) {
       >
         <div className="absolute w-full h-full rounded-xl opacity-70 pyro " />
         <h1 className="text-white  text-center text-3xl z-50 p-8">
-          <b className="font-mono font-bolder ">Stay Tuned!!!</b>{" "}
+          <b className=" font-bolder ">Stay Tuned for the Pre-Event!!!</b>{" "}
           {/* <a
             className="bg-gray-50 text-black hover:bg-black hover:text-white text-xl p-1 m-1 rounded-md"
             href="https://www.hestiatkmce.live/"

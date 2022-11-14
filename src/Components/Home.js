@@ -6,24 +6,39 @@ import About from "./About";
 import Footer from "./Footer";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-
+import logo from "../assets/logo.png";
+import dev_logo from "../assets/dev_logo.png";
+import iic_logo from "../assets/iic.png";
+import polygon from "../assets/poly.png";
+import filecoin from "../assets/file_coin.png";
+import repl from "../assets/repl.png";
+import dev_app from "../assets/dev_app.png";
+import Countdown from "react-countdown";
 function Home(props) {
+  const gold = [{name:"",logo:filecoin,link:"https://filecoin.io/"},
+    {name:"",logo:repl,link:"https://replit.com/"},]
   const [sponsors, setsponsors] = useState([
     {
-      name: "DevFolio",
-      logo: "https://devfolio.co/favicon-32x32.png",
+      name: "",
+      logo: dev_logo,
       link: "https://devfolio.co/",
     },
     {
-      name: "IIC",
-      logo: "https://iic.ksrct.ac.in/images/IIClogos1.png",
+      name: "",
+      logo: iic_logo,
       link: "https://mic.gov.in/innovation-council/iic",
     },
     {
-      name: "TinkerHub",
-      logo: "https://avatars.githubusercontent.com/u/45253922?s=200&v=4",
-      link: "https://www.tinkerhub.org",
+      name: "",
+      logo: polygon,
+      link: "https://polygon.technology/",
     },
+    // {
+    //   name: "",
+    //   logo: solana,
+    //   link: "https://solana.com/",
+    // },
+
   ]);
 
   useEffect(() => {
@@ -37,6 +52,27 @@ function Home(props) {
   }, []);
   return (
     <div className="backgroundsv  bg-opacity-50 ">
+
+      <div className={"absolute z-40 m-2"}>
+       
+        
+
+        <div className="flex justify-between grid grid-cols-3 gap-6 ">
+         
+          <article className="container bg-black shadow-2xl rounded-2xl p-5">
+            <h1 className=" text-white font-mono text-center uppercase">
+              <Countdown date={new Date("2022-11-20")} />
+            </h1>
+            <p className="font-light text-gray-500 hover:font-bold"></p>
+
+            <a className={"rounded-lg z-50 "} href={"#"}>
+              <img src={dev_app} className={"w-52 rounded-lg hover:invert filter"} alt={"rounded-lg"}/>
+            </a>
+          </article>
+       
+        </div>
+      
+      </div>
       <div className="absolute right-4 top-4 flex  max-w-sm mx-auto overflow-hidden bg-purpleC rounded-lg shadow-md ">
         <div className="flex items-center justify-center w-8 bg-black ">
           <svg
@@ -72,10 +108,10 @@ function Home(props) {
         <div className="w-4/5 mb-10 flex flex-col items-center ">
           {/*<h1 className="text-6xl mb-5 text-white opacity-50">☵ ☵ ☰</h1>*/}
           <p className="text-center text-white  ">
-            <i>@Tkmce </i>
+            <i>Tkmce@2022 </i>
           </p>
         </div>
-        <div className="flex mb-10 bg-black bg-opacity-20 shadow-lg rounded-xl md:w-2/3 px-8 py-4 flex-col items-center ">
+        <div className="flex mb-10  bg-opacity-20 shadow-lg rounded-xl md:w-2/3 px-8 py-4 flex-col items-center ">
           <div className="   hover:bg-purpleC rounded-full  m-2 mx-4">
             <a
               target="_blank"
@@ -83,43 +119,44 @@ function Home(props) {
               rel="noreferrer"
             >
               <img
-                src={"https://www.iedctkmce.com/images/navbar/iedc.png"}
+                src={logo}
                 alt="logo"
-                className="w-12 rounded-full"
+                className="w-36 rounded-full"
               />
             </a>
           </div>
           <p className="text-center text-white text-xs">{"Presents"}</p>
 
-          <h3 className="lg:text-8xl md:text-5xl  text-4xl text-transparent bg-clip-text bg-gradient-to-br font-semibold from-blueC via-red-500 to-pinkC p-2 ">
+          <h3 className="lg:text-8xl md:text-5xl  text-4xl text-transparent bg-clip-text bg-gradient-to-br font-semibold from-white via-yellow-500 to-white p-2 ">
             Latency 2.0
           </h3>
-          <br></br>
-          <br></br>
-          <br></br>
+
           <div className="h-12"></div>
         </div>
 
         <a href={"#"} className=" ">
-          <div className="button-54">
-            <p className="text-white text-2xl font-semibold">Coming soon!</p>
-          </div>
+          {/*<div className="border-2 border-yellow-300 rounded-xl px-4 py-2">*/}
+          {/*  <p className="text-white text-2xl font-semibold">Coming soon!</p>*/}
+          {/*</div>*/}
         </a>
 
-        <div className="mt-10 w-2/3 flex flex-col items-center my-16">
-          <h4 className="text-white">In Association with</h4>
+        <div className="mt-10 w-2/3 flex flex-col items-center mt-16">
+          <div className={"relative text-2xl my-2 font-bold"}>
+          <span className="text-white shine ">Platinum:Sponsors</span>
+          </div>
+
           <div className=" mt-1  rounded-lg w-full lg:w-3/4 p-4 flex justify-center items-center bg-transparent">
-            <div className="grid grid-cols-3 ">
+            <div className="grid lg:grid-cols-3 grid-cols-1 ">
               {sponsors && sponsors.length ? (
                 sponsors.map((item) => {
                   return (
-                    <div className="w-20">
-                      <div className=" bg-gray-200  hover:bg-purpleC rounded-full p-1 m-4">
+                    <div className="">
+                      <div className="   bg-[#191919] m-4">
                         <a target="_blank" href={item.link} rel="noreferrer">
                           <img
                             src={item.logo}
                             alt="logo"
-                            className="w-12 rounded-full"
+                            className=" "
                           />
                         </a>
                       </div>
@@ -128,8 +165,7 @@ function Home(props) {
                       </p>
                     </div>
                   );
-                })
-              ) : (
+                })) : (
                 <div className="flex  justify-center w0 items-center">
                   <div className={"h-full"}>
                     <Loader
@@ -140,6 +176,47 @@ function Home(props) {
                     />
                   </div>
                 </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className=" w-2/3 flex flex-col items-center ">
+          <div className={"relative text-2xl my-2 font-bold"}>
+            <span className="text-white shine_gold ">Gold:Sponsors</span>
+          </div>
+
+          <div className=" mt-1  rounded-lg w-full lg:w-3/4 p-4 flex justify-center items-center bg-transparent">
+            <div className="grid grid-cols-2 ">
+              {gold && gold.length ? (
+                  gold.map((item) => {
+                    return (
+                        <div className="">
+                          <div className="   bg-[#191919] m-4">
+                            <a target="_blank" href={item.link} rel="noreferrer">
+                              <img
+                                  src={item.logo}
+                                  alt="logo"
+                                  className="w-48 "
+                              />
+                            </a>
+                          </div>
+                          <p className="text-center text-white text-xs">
+                            {item.name}
+                          </p>
+                        </div>
+                    );
+                  })) : (
+                  <div className="flex  justify-center w0 items-center">
+                    <div className={"h-full"}>
+                      <Loader
+                          type="BarLoader"
+                          color="#fff"
+                          height={100}
+                          width={100}
+                      />
+                    </div>
+                  </div>
               )}
             </div>
           </div>
