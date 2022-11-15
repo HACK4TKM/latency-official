@@ -14,6 +14,7 @@ import filecoin from "../assets/file_coin.png";
 import repl from "../assets/repl.png";
 import dev_app from "../assets/dev_app.png";
 import Countdown from "react-countdown";
+import gold_ from "../assets/tt.jpg"
 function Home(props) {
   const gold = [{name:"",logo:filecoin,link:"https://filecoin.io/"},
     {name:"",logo:repl,link:"https://replit.com/"},]
@@ -57,18 +58,18 @@ function Home(props) {
        
         
 
-        <div className="flex justify-between grid grid-cols-3 gap-6 ">
+        <div className=" ">
          
-          <article className="container bg-black shadow-2xl rounded-2xl p-5">
-            <h1 className=" text-white font-mono text-center uppercase">
+          <div className=" bg-black bg-opacity-40  rounded-md p-2 w-full">
+            <p className=" md:text-xl text-xs text-white font-mono  text-center uppercase">
               <Countdown date={new Date("2022-11-20")} />
-            </h1>
-            <p className="font-light text-gray-500 hover:font-bold"></p>
+            </p>
 
-            <a className={"rounded-lg z-50 "} href={"#"}>
-              <img src={dev_app} className={"w-52 rounded-lg hover:invert filter"} alt={"rounded-lg"}/>
+
+            <a className={"rounded-lg z-50   "} href={"#"}>
+              <img src={dev_app} className={"md:w-48 w-32 rounded-lg hover:invert filter"} alt={"rounded-lg"}/>
             </a>
-          </article>
+          </div>
        
         </div>
       
@@ -111,7 +112,7 @@ function Home(props) {
             <i>Tkmce@2022 </i>
           </p>
         </div>
-        <div className="flex mb-10  bg-opacity-20 shadow-lg rounded-xl md:w-2/3 px-8 py-4 flex-col items-center ">
+        <div className="flex mb-10  bg-opacity-20  rounded-xl md:w-2/3 px-8 py-4 flex-col items-center ">
           <div className="   hover:bg-purpleC rounded-full  m-2 mx-4">
             <a
               target="_blank"
@@ -127,11 +128,11 @@ function Home(props) {
           </div>
           <p className="text-center text-white text-xs">{"Presents"}</p>
 
-          <h3 className="lg:text-8xl md:text-5xl  text-4xl text-transparent bg-clip-text bg-gradient-to-br font-semibold from-white via-yellow-500 to-white p-2 ">
+          <h3 className="font-neon lg:text-8xl md:text-5xl  uppercase text-5xl text-transparent bg-clip-text bg-gradient-to-br font-semibold from-white via-yellow-500 to-white p-2 ">
             Latency 2.0
           </h3>
 
-          <div className="h-12"></div>
+          <button style={{backgroundImage:`url('${gold_}')`,backgroundPosition:'center'}} className={"mm p-2 font-semibold font-sans text-sm rounded my-2 border-yellow-400 border text-white"}>Coming Soon!</button>
         </div>
 
         <a href={"#"} className=" ">
@@ -140,13 +141,13 @@ function Home(props) {
           {/*</div>*/}
         </a>
 
-        <div className="mt-10 w-2/3 flex flex-col items-center mt-16">
+        <div className="mt-10 md:w-2/3 flex flex-col items-center mt-16">
           <div className={"relative text-2xl my-2 font-bold"}>
           <span className="text-white shine ">Platinum:Sponsors</span>
           </div>
 
           <div className=" mt-1  rounded-lg w-full lg:w-3/4 p-4 flex justify-center items-center bg-transparent">
-            <div className="grid lg:grid-cols-3 grid-cols-1 ">
+            <div className="grid lg:grid-cols-3 grid-cols-3 ">
               {sponsors && sponsors.length ? (
                 sponsors.map((item) => {
                   return (

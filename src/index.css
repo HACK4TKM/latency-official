@@ -5,22 +5,24 @@
 	background-color: #191919;
 	opacity: 10;
 	height: 100vh;
-	background-image: url("./assets/topography.svg");
-
 	background-size: cover;
+	background-image: url("./assets/topography.svg");
+	background-position: center;
+
 }
 body{
 	overflow-x:hidden;
 }
 @media only screen and (max-width: 1100px) {
 	.backgroundsv {
-		background-size: auto;
+		background-size: cover;
+
 	}
 }
 @font-face {
 	font-family: "NeontubeBold";
 	src: local("PPNeueBit-Regular"),
-	url("../src/assets/Neontube-Bold.woff") format("woff");
+	url("../src/assets/KungFuMaster-K7vrX.otf") format("woff");
 
 }
 .font-neon{
@@ -125,5 +127,11 @@ body{
 	color:transparent;
 	-webkit-background-clip:text;
 
+}
+.mm{
+	background-position: center;
+}
+.mm:hover{
+	background-position: left;
 }
 
