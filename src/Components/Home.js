@@ -14,10 +14,12 @@ import filecoin from "../assets/file_coin.png";
 import repl from "../assets/repl.png";
 import dev_app from "../assets/dev_app.png";
 import Countdown from "react-countdown";
-import gold_ from "../assets/tt.jpg"
+import gold_ from "../assets/tt.jpg";
+import solana from "../assets/solana.png";
 function Home(props) {
   const gold = [{name:"",logo:filecoin,link:"https://filecoin.io/"},
-    {name:"",logo:repl,link:"https://replit.com/"},]
+    {name:"",logo:repl,link:"https://replit.com/"},
+    {name:"",logo:solana,link:"https://solana.com/"},]
   const [sponsors, setsponsors] = useState([
     {
       name: "",
@@ -188,7 +190,7 @@ function Home(props) {
           </div>
 
           <div className=" mt-1  rounded-lg w-full lg:w-3/4 p-4 flex justify-center items-center bg-transparent">
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-3 ">
               {gold && gold.length ? (
                   gold.map((item) => {
                     return (
