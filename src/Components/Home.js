@@ -17,6 +17,16 @@ import Countdown from "react-countdown";
 import gold_ from "../assets/tt.jpg";
 import solana from "../assets/solana.png";
 function Home(props) {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
   const gold = [{name:"",logo:filecoin,link:"https://filecoin.io/"},
     {name:"",logo:repl,link:"https://replit.com/"},
     {name:"",logo:solana,link:"https://solana.com/"},]
@@ -68,9 +78,13 @@ function Home(props) {
             </p>
 
 
-            <a className={"rounded-lg z-50   "} href={"#"}>
-              <img src={dev_app} className={"md:w-48 w-32 rounded-lg hover:invert filter"} alt={"rounded-lg"}/>
-            </a>
+            <div
+                className="apply-button"
+                data-hackathon-slug="latency-2.0"
+                data-button-theme="light"
+                style={{height: '44px', width: '312px'}}
+            >
+              <p>Apply</p></div>
           </div>
        
         </div>

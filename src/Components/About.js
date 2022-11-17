@@ -89,7 +89,7 @@ function About(props) {
             title: "Check-in for Participants",
             desc: "Selected students can participate in the offline hackathon at TKM College of Engineering"
         },
-       
+
         {
             date: "11th Dec 2022",
             icon:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
