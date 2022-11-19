@@ -6,12 +6,17 @@
 	opacity: 10;
 	height: 100vh;
 	background-size: cover;
+	background-repeat: repeat-y;
 	background-image: url("./assets/topography.svg");
 	background-position: center;
 
 }
 body{
 	overflow-x:hidden;
+}
+.hov:hover{
+	filter: saturate(50);
+
 }
 @media only screen and (max-width: 1100px) {
 	.backgroundsv {
@@ -22,7 +27,7 @@ body{
 @font-face {
 	font-family: "NeontubeBold";
 	src: local("PPNeueBit-Regular"),
-	url("../src/assets/KungFuMaster-K7vrX.otf") format("woff");
+	url("../src/assets/NitrogodsPersonalUseBold-z81j3.ttf") format("woff");
 
 }
 .font-neon{
@@ -31,7 +36,7 @@ body{
 
 .backgroundtt {
 	background-color: #2B2B2B;
-	background-image: url("./assets/tt.png");
+	background-image: url("./assets/tt.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -133,5 +138,75 @@ body{
 }
 .mm:hover{
 	background-position: left;
+}
+.shine_diamond{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+
+	background-image: linear-gradient(
+			to right,
+			#505050 0,
+			#a3a3a3 22%,
+			#a3fff2 45%,
+			#717171 50%,
+			#a3fff2 55%,
+			#828282 78%,
+			#a3fff2 100%
+	);
+	color:transparent;
+	-webkit-background-clip:text;
+
+}
+
+
+
+
+.title-word {
+	animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+	--color-1: #4dff05;
+	--color-2: #3D8DAE;
+	--color-3: #E4A9A8;
+}
+
+.title-word-2 {
+	--color-1: #aaffaf;
+	--color-2: #ACCFCB;
+	--color-3: #5de5f4;
+}
+
+.title-word-3 {
+	--color-1: #ACCFCB;
+	--color-2: #00ffea;
+	--color-3: #ACCFCB;
+}
+
+.title-word-4 {
+	--color-1: #3D8DAE;
+	--color-2: #DF8453;
+	--color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+	0%    {color: var(--color-1)}
+	32%   {color: var(--color-1)}
+	33%   {color: var(--color-2)}
+	65%   {color: var(--color-2)}
+	66%   {color: var(--color-3)}
+	99%   {color: var(--color-3)}
+	100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+
+
+.title {
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
