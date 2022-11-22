@@ -1,16 +1,16 @@
 import Countdown from "react-countdown";
 
 
-const renderer = ({total, hours, minutes, seconds}) => {
+const renderer = ({ total, hours, minutes, seconds }) => {
     minutes = String(minutes).length === 1 ? `0${String(minutes)}` : String(minutes);
     seconds = String(seconds).length === 1 ? `0${String(seconds)}` : String(seconds);
     if (total) {
         return (
             <span>
                 <b className={"bg-gray-900 p-2 rounded-lg"}>{hours}</b>:<b
-                className={"bg-gray-900 p-2 rounded-lg"}>{minutes}</b>:<b
-                className={"bg-green-400 p-2 rounded-lg"}>{seconds}</b>
-      </span>
+                    className={"bg-gray-900 p-2 rounded-lg"}>{minutes}</b>:<b
+                        className={"bg-green-400 p-2 rounded-lg"}>{seconds}</b>
+            </span>
         );
     } else {
         // Render a finished state
@@ -24,21 +24,11 @@ export function FloatingBar() {
             <div className="   ">
                 <div className="  bg-opacity-40  rounded-md p-2 w-full">
                     <p className=" md:text-xl text-xs text-white font-mono  text-center uppercase">
-                        <Countdown renderer={renderer} date={new Date("2022-11-21")}/>
+                        <Countdown renderer={renderer} date={new Date("2022-11-21")} />
                     </p>
 
-                    <br/>
-                    <div className={"flex justify-center items-center w-full rounded-xl"}>
-                    <div className={"my-2 bg-purpleC w-48 "}>
-                        <div
-                            className="apply-button "
-                            data-hackathon-slug="latency-2.0"
-                            data-button-theme="light"
-                            style={{height: '44px'}}
-                        >
-                            <p></p></div>
-                    </div>
-                    </div>
+                    <br />
+
                 </div>
             </div>
             <div>
@@ -51,7 +41,7 @@ export function FloatingBar() {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z"/>
+                                d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z" />
                         </svg>
                     </div>
 
@@ -63,9 +53,9 @@ export function FloatingBar() {
                             target={"_blank"}
                         >
                             <div className="mx-4">
-              <span className="mx-4 font-semibold text-white  text-sm px-2">
-                Rules & guidelines
-              </span>
+                                <span className="mx-4 font-semibold text-white  text-sm px-2">
+                                    Rules & guidelines
+                                </span>
                             </div>
                         </a>
                     </div>

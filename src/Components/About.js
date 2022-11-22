@@ -1,16 +1,16 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import register from "../assets/users.png";
 import discord from "../assets/cloud.png";
 import hack from "../assets/hack.png";
 import pitch from "../assets/pitch.png";
-import {get_blogs, get_faqs} from "../apis/blogs_api";
+import { get_blogs, get_faqs } from "../apis/blogs_api";
 import Loader from "react-loader-spinner";
 import schedule from "../assets/shed.svg";
-import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {Schedule} from "./Home/Schedule";
-import {Tshirt} from "./Home/Tshirt3d";
+import { Schedule } from "./Home/Schedule";
+import { Tshirt } from "./Home/Tshirt3d";
 
 function About(props) {
 
@@ -18,10 +18,10 @@ function About(props) {
 
     return (
         <div className="w-full bg-purpleC    text-white lg:px-20 px-4 py-10">
-            <div className="flex w-full flex-col lg:flex-row items-center justify-around">
+            <div className="flex w-full flex-col lg:flex-row  justify-around h-full  bg-gradient-to-r from-purpleC to-purpleC2 shadow-lg">
                 <div
 
-                    className="bg-gradient-to-r my-8 text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
+                    className=" text-left flex flex-col items-start h-full  w-full lg:w-1/2 p-10 rounded-xl"
                 >
                     <h7 className="font-bold text-5xl mb-2">About Us</h7>
                     <p className="text-justify">
@@ -37,9 +37,10 @@ function About(props) {
                 <div
 
                     id={"3d"}
-                    className=" bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-5/12 p-10 rounded-xl"
+                    className=" bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-1/2 min-h-full rounded-xl"
                 >
-                  <Tshirt/>
+                    <Tshirt />
+
                 </div>
             </div>
 
