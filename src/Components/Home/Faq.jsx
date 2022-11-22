@@ -29,7 +29,7 @@ const faqs=[
 export function Faq() {
     return(
         <div
-            
+
             className="text-white bg-purpleC4 py-5 w-full mt-10 rounded-xl flex md:p-8 p-4 flex-col items-start"
         >
             <h7 className="font-bold text-5xl mb-5 ">Have Questions?</h7>
