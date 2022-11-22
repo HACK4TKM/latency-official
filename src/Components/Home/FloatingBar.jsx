@@ -28,7 +28,7 @@ export function FloatingBar() {
                     </p>
 
                     <br />
-                    <div className={"flex justify-center items-center w-full rounded-xl"}>
+                    {/* <div className={"flex justify-center items-center w-full rounded-xl"}>
                         <div className={"my-2 bg-purpleC w-48 "}>
                             <div
                                 className="apply-button "
@@ -38,7 +38,7 @@ export function FloatingBar() {
                             >
                                 <p></p></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div>
