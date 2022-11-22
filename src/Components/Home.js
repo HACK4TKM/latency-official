@@ -124,17 +124,6 @@ function Home(props) {
 
                     <Coordinators link={"https://www.iedctkmce.com/"} logo={logo} />
                     <MainTitle title={"Latency"} version={"2.0"} />
-                    {/* <div className={"flex justify-center items-center w-full rounded-xl"}> */}
-                    <div className={"my-5 "}>
-                        <div
-                            className="apply-button "
-                            data-hackathon-slug="latency-2.0"
-                            data-button-theme="light"
-                            style={{ height: '44px' }}
-                        >
-                            <p></p></div>
-                        {/* </div> */}
-                    </div>
                     <Sponsors_new sponsors={diamond_sponsors} />
 
                 </div>

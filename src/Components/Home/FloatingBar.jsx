@@ -28,7 +28,17 @@ export function FloatingBar() {
                     </p>
 
                     <br />
-
+                    <div className={"flex justify-center items-center w-full rounded-xl"}>
+                        <div className={"my-2 bg-purpleC w-48 "}>
+                            <div
+                                className="apply-button "
+                                data-hackathon-slug="latency-2.0"
+                                data-button-theme="light"
+                                style={{ height: '44px' }}
+                            >
+                                <p></p></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>

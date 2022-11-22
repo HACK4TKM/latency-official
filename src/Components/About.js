@@ -11,6 +11,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { Schedule } from "./Home/Schedule";
 import { Tshirt } from "./Home/Tshirt3d";
+import notepad from "../assets/notepad.png"
+import stickers from "../assets/stickers.png"
+// import swags from "../assets/stickers.png"
+import swags from '../assets/sghwags.png';
 
 function About(props) {
 
@@ -37,7 +41,7 @@ function About(props) {
                 <div
 
                     id={"3d"}
-                    className=" bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-1/2 min-h-full rounded-xl"
+                    className="relative bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-1/2 min-h-full rounded-xl"
                 >
                     <Tshirt />
 
