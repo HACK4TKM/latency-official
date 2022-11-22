@@ -41,7 +41,7 @@ function About(props) {
                 <div
 
                     id={"3d"}
-                    className="relative bg-gradient-to-r text-left flex flex-col items-start from-purpleC to-purpleC2 shadow-lg w-full lg:w-1/2 min-h-full rounded-xl"
+                    className="relative text-left flex flex-col items-start w-full lg:w-1/2 min-h-full rounded-xl"
                 >
                     <Tshirt />
 
