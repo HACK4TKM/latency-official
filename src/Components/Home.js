@@ -128,11 +128,11 @@ function Home(props) {
                     <div className={"my-5 "}>
                         <div
                             className="apply-button "
-                            data-hackathon-slug="latency-2.0"
+                            data-hackathon-slug="latency2"
                             data-button-theme="light"
                             style={{ height: '44px' }}
                         >
-                            <p></p></div>
+                            </div>
                         {/* </div> */}
                     </div>
                     <Sponsors_new sponsors={diamond_sponsors} />

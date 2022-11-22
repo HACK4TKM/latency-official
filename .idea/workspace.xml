@@ -5,37 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f058624-45f4-4334-8f7b-68819b9601c8" name="Default Changelist" comment="firebase deploy">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/p5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vanta.trunk.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/AnimatedBanner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Coordinators.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/DiamondSponsors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Faq.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/FloatingBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/MainTitle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Pricing.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Schedule.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/ScheduleMini.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Sponsors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Home/Tshirt3d.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/DBSchenker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/dhl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/notepad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/stickers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/thsirt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/worldtron.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/topography.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/topography.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Home/Faq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Faq.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +105,8 @@
       <workItem from="1668752051105" duration="5298000" />
       <workItem from="1668767948465" duration="20000" />
       <workItem from="1668768215263" duration="7725000" />
-      <workItem from="1668838095067" duration="10136000" />
+      <workItem from="1668838095067" duration="10738000" />
+      <workItem from="1669131469364" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="firebase deploy">
       <created>1637242031230</created>
