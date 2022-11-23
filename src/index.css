@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .backgroundsv {
 	background-color: #191919;
 	opacity: 10;
@@ -11,26 +12,31 @@
 	background-position: center;
 
 }
-body{
-	overflow-x:hidden;
+
+body {
+	overflow-x: hidden;
 }
-.hov:hover{
+
+.hov:hover {
 	filter: saturate(50);
 
 }
+
 @media only screen and (max-width: 1100px) {
 	.backgroundsv {
 		background-size: cover;
 
 	}
 }
+
 @font-face {
 	font-family: "NeontubeBold";
 	src: local("PPNeueBit-Regular"),
-	url("../src/assets/NitrogodsPersonalUseBold-z81j3.ttf") format("woff");
+		url("../src/assets/NitrogodsPersonalUseBold-z81j3.ttf") format("woff");
 
 }
-.font-neon{
+
+.font-neon {
 	font-family: "NeontubeBold", serif;
 }
 
@@ -51,9 +57,11 @@ body{
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -91,72 +99,69 @@ body{
 	}
 }
 
-.shine{
+.shine {
 	position: absolute;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
 
 	font-weight: bold;
-	background-image: linear-gradient(
-			to right,
+	background-image: linear-gradient(to right,
 			#505050 0,
 			#a3a3a3 22%,
 			#ffffff 45%,
 			#717171 50%,
 			#e4e4e4 55%,
 			#828282 78%,
-			#ffffff 100%
-	);
-	color:transparent;
-	-webkit-background-clip:text;
+			#ffffff 100%);
+	color: transparent;
+	-webkit-background-clip: text;
 
 }
 
-.shine_gold{
+.shine_gold {
 	position: absolute;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
 
-	background-image: linear-gradient(
-			to right,
+	background-image: linear-gradient(to right,
 			#462523 0,
 			#cb9b51 22%,
 			#f6e27a 45%,
 			#f6f2c0 50%,
 			#f6e27a 55%,
 			#cb9b51 78%,
-			#462523 100%
-	);
-	color:transparent;
-	-webkit-background-clip:text;
+			#462523 100%);
+	color: transparent;
+	-webkit-background-clip: text;
 
 }
-.mm{
+
+.mm {
 	background-position: center;
 }
-.mm:hover{
+
+.mm:hover {
 	background-position: left;
 }
-.shine_diamond{
+
+.shine_diamond {
 	position: absolute;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
 
-	background-image: linear-gradient(
-			to right,
+	background-image: linear-gradient(to right,
 			#505050 0,
 			#a3a3a3 22%,
 			#a3fff2 45%,
 			#717171 50%,
 			#a3fff2 55%,
 			#828282 78%,
-			#a3fff2 100%
-	);
-	color:transparent;
-	-webkit-background-clip:text;
+			#a3fff2 100%);
+	color: transparent;
+	-webkit-background-clip: text;
 
 }
 
@@ -192,13 +197,33 @@ body{
 }
 
 @keyframes color-animation {
-	0%    {color: var(--color-1)}
-	32%   {color: var(--color-1)}
-	33%   {color: var(--color-2)}
-	65%   {color: var(--color-2)}
-	66%   {color: var(--color-3)}
-	99%   {color: var(--color-3)}
-	100%  {color: var(--color-1)}
+	0% {
+		color: var(--color-1)
+	}
+
+	32% {
+		color: var(--color-1)
+	}
+
+	33% {
+		color: var(--color-2)
+	}
+
+	65% {
+		color: var(--color-2)
+	}
+
+	66% {
+		color: var(--color-3)
+	}
+
+	99% {
+		color: var(--color-3)
+	}
+
+	100% {
+		color: var(--color-1)
+	}
 }
 
 /* Here are just some visual styles. 🖌 */
@@ -210,3 +235,54 @@ body{
 	text-transform: uppercase;
 }
 
+
+.swags {
+	/* transform: rotate(-30deg) skew(25deg) scale(0.8); */
+	/* transition: 0.5s; */
+}
+
+.swags img {
+	position: absolute;
+
+	transition: 0.5s;
+}
+
+.swags:hover img:nth-child(3) {
+	transform: translate(0, 0);
+	opacity: 1;
+}
+
+
+
+.swags:hover img:nth-child(2) {
+	transform: translate(-100px, 0);
+
+	opacity: 1;
+}
+
+.swags:hover img:nth-child(1) {
+	transform: translate(0px, -100px);
+
+	opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+	.swags:hover img:nth-child(3) {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+
+
+
+	.swags:hover img:nth-child(2) {
+		transform: translate(-100px, 0);
+
+		opacity: 1;
+	}
+
+	.swags:hover img:nth-child(1) {
+		transform: translate(-200px, 0);
+
+		opacity: 1;
+	}
+}

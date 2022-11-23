@@ -131,7 +131,7 @@ function Home(props) {
                             data-button-theme="light"
                             style={{ height: '44px' }}
                         >
-                            </div>
+                        </div>
                         {/* </div> */}
                     </div>
                     <Sponsors_new sponsors={diamond_sponsors} />
