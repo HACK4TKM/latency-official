@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import logo from "../assets/logo.png";
+import fosslogo from "../assets/foss_united.png"
 import dev_logo from "../assets/dev_logo.png";
 import iic_logo from "../assets/iic.png";
 import polygon from "../assets/poly.png";
@@ -104,6 +105,8 @@ function Home(props) {
     const gold = [{ name: "", logo: filecoin, link: "https://filecoin.io/" }, {
         name: "", logo: repl, link: "https://replit.com/"
     }, { name: "", logo: solana, link: "https://solana.com/" },]
+    const silver = [{ name: "", logo: fosslogo, link: "https://fossunited.org/" },
+    ]
 
 
     return (
@@ -175,6 +178,16 @@ function Home(props) {
                         {/*<div className={"h-1 w-wit  w-32 mt-4 bg-gradient-to-r from-yellow-500"}></div>*/}
 
                         <Sponsors sponsors={gold} />
+
+                    </div>
+                    <div className="  flex flex-col items-center w-10/12 m-auto py-4 ">
+                        <div className={"relative text-2xl  font-bold"}>
+                            <span className="text-white  bg-purpleC_gold text-4xl  ">Silver:Sponsors</span>
+
+                        </div>
+                        {/*<div className={"h-1 w-wit  w-32 mt-4 bg-gradient-to-r from-yellow-500"}></div>*/}
+
+                        <Sponsors sponsors={silver} />
 
                     </div>
 
