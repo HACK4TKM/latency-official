@@ -9,16 +9,16 @@ const faqs=[
         ans: "Minimum of 2 members and maximum of 4 members for each team.",
     },
     {
-        ques: "What is the theme of the hacakthon?",
+        ques: "What is the theme of the hackathon?",
         ans: "It’s an open hackathon where you can bring your ideas into reality.",
     },
     {
         ques: "Do we receive any freebies?",
-        ans: "Ofcourse. There are amazing swags and goodies awaiting for you.",
+        ans: "Of course. There are amazing swags and goodies awaiting for you.",
     },
     {
         ques: "What if we stuck with the project while doing?",
-        ans: "OfDon’t worry. We have an amazing team of mentors for you to help you out with your ideas as well as a zestful volunteers to help you in all kinds of requirements. ",
+        ans: "Don’t worry. We have an amazing team of mentors for you to help you out with your ideas as well as a zestful volunteers to help you in all kinds of requirements. ",
     },
     {
         ques: "Is it necessary that everyone in the team require coding skills?",

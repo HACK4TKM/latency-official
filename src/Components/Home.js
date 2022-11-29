@@ -30,12 +30,11 @@ import * as PropTypes from "prop-types";
 
 function Sponsors_new(props) {
     const sponsors = [
-        { image: "https://i.imgur.com/SnOvTWJ.jpg", link: "https://www.ieeesbtkmce.in/" },
-        , { image: "https://tkmce.github.io/fosscell/assets/logos/tkmce_foss_icon.png", link: "https://tkmce.github.io/fosscell/" },
+
         { image: "https://worldtronlogistics.com/assets/images/a.png", link: "https://www.worldtronlogistics.com/" },
         { image: "https://www.dhl.com/content/dam/dhl/global/core/images/teaser-image-main/dhl-logo.jpg", link: "https://www.dhl.com/in-en/home.html?locale=true" }]
     return (
-        <div className={"grid grid-cols-4 gap-3 my-2"}>
+        <div className={"grid grid-cols-2 gap-2 my-2"}>
             {sponsors.map((e) => (
                 <div className={""}>
                     <a href={e.link} className={""}>
