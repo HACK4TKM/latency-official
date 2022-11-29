@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f058624-45f4-4334-8f7b-68819b9601c8" name="Default Changelist" comment="firebase deploy">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Home/Faq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home/Faq.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +105,7 @@
       <workItem from="1668768215263" duration="7725000" />
       <workItem from="1668838095067" duration="10738000" />
       <workItem from="1669131469364" duration="1931000" />
+      <workItem from="1669309426721" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="firebase deploy">
       <created>1637242031230</created>
