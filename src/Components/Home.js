@@ -146,6 +146,9 @@ function Home(props) {
                 <div className={"bg-purpleC w-full"}>
                     <Pricing />
                 </div>
+                <div className={"bg-purpleC w-full"}>
+
+                </div>
                 <div
 
                     className="relative bg-purpleC flex justify-center items-center  w-full  rounded-xl flex flex-col items-start"
