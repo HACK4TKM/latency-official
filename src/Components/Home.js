@@ -164,7 +164,7 @@ function Home(props) {
 
                 {/*<div className={"h-1 w-wit  w-32   bg-gradient-to-r from-blue-500"}></div>*/}
                 <Sponsors sponsors={diamond_sponsors} />
-                <div className={"grid grid-cols-1 my-12 gap-4"}>
+                <div className={"grid grid-cols-1 my-12 gap-4 md:px-10 "}>
                     <div className="  flex flex-col items-center w-10/12 m-auto py-4 ">
                         <div className={"relative text-2xl  font-bold"}>
                             <span className="text-white  bg-purpleC text-4xl ">Platinum:Sponsors</span>
@@ -173,7 +173,7 @@ function Home(props) {
                         <Sponsors sponsors={sponsors} />
                     </div>
 
-                    <div className="  flex flex-col items-center w-10/12 m-auto py-4 ">
+                    <div className="  flex flex-col items-center w-10/12 m-auto py-4">
                         <div className={"relative text-2xl  font-bold"}>
                             <span className="text-white  bg-purpleC_gold text-4xl  ">Gold:Sponsors</span>
 
@@ -183,7 +183,7 @@ function Home(props) {
                         <Sponsors sponsors={gold} />
 
                     </div>
-                    <div className="  flex flex-col items-center w-10/12 m-auto py-4 ">
+                    <div className="  flex flex-col items-center w-10/12 m-auto py-4">
                         <div className={"relative text-2xl  font-bold"}>
                             <span className="text-white  bg-purpleC_gold text-4xl  ">Silver:Sponsors</span>
 
@@ -193,6 +193,7 @@ function Home(props) {
                         <Sponsors sponsors={silver} />
 
                     </div>
+
 
                 </div>
 
